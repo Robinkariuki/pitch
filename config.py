@@ -6,7 +6,7 @@ class Config:
     '''
     
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://robin:zelda@localhost/pitch'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_TRACK_MODIFICATIONS=True 
 
@@ -21,6 +21,9 @@ class Config:
     SIMPLEMDE_JS_IIFE = True
     SIMPLEMDE_USE_CDN = True
 
+    @staticmethod
+    def init_app(app):
+        pass
 
 class ProdConfig(Config):
     '''
@@ -32,7 +35,7 @@ class ProdConfig(Config):
     
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/pitch_test'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://robin:zelda@localhost/pitch_test'
 
 class DevConfig(Config):
     '''
@@ -40,7 +43,7 @@ class DevConfig(Config):
     Args:
         Config: The parent configuration class with General configuration settings
     '''
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://postgres:123@localhost/pitch'
+    
     DEBUG = True
 
 config_options = {

@@ -10,7 +10,7 @@ def index():
     title = 'Home'
 
     pitches = Pitch.get_pitches()
-    comments=Comments.get_comments()
+    comments = Comments.get_comments()
 
     return render_template('index.html' ,title=title, pitches=pitches,comments=comments)
 
