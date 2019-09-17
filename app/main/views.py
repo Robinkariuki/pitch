@@ -44,7 +44,7 @@ def new_comment():
         new_comment=Comments(name=name)
         new_comment.save_comment()
 
-        return redirect(url_for('.index'))
+        return redirect(url_for('main.index'))
 
     title = "New Comment"
     return render_template('new_comment.html', title=title, form=form,comments=comments)
