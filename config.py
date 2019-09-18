@@ -5,8 +5,8 @@ class Config:
     General configuration parent class
     '''
     
-    # SECRET_KEY = os.environ.get('SECRET_KEY')
-    SECRET_KEY='1234'
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    # SECRET_KEY='1234'
     # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://robin:zelda@localhost/pitch'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_TRACK_MODIFICATIONS=True 
