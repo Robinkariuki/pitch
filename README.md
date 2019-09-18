@@ -3,7 +3,7 @@
 one minute pitches is a web app where users can upload short pitches of an idea that they have.
 ***
 # Author
-peter njoroge
+Robin kariuki
 ***
 # Project Setup Instructions
 * clone the repo
@@ -24,6 +24,7 @@ peter njoroge
 None for now.
 ***
 # Link to Live website
+https://pitch-master.herokuapp.com/
 
 # Copyright and License Information
   This project is licensed under the terms of the **MIT** license.
