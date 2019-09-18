@@ -9,6 +9,7 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://robin:zelda@localhost/pitch'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_TRACK_MODIFICATIONS=True 
+    CSRF_ENABLED = True
 
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
