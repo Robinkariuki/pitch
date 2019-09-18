@@ -1,6 +1,6 @@
 # pitch
 # Description
-one minute pitches is a web app where users can upload short pitches of an idea that they have.
+pitches is a web app where users can upload short pitches of an idea that they have.
 ***
 # Author
 Robin kariuki
