@@ -1,5 +1,5 @@
-export SECRET_KEY=1234
-set MAIL_USERNAME='robinkaris7@gmail.com'
-set MAIL_PASSWORD='Tokyoghoul'
+export SECRET_KEY='1234'
+export MAIL_USERNAME='robinkaris7@gmail.com'
+export MAIL_PASSWORD='Tokyoghoul'
 
 python manage.py server
